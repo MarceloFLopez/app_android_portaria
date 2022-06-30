@@ -1,0 +1,128 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lbl_title_usuario"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CADASTRO DE USUÁRIOS"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <GridLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txt_ColumnUsuario"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:hint="LOGIN"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/txt_ColumnSenha"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:hint="SENHA"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:id="@+id/txt_ColumSituacao"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:hint="SITUAÇÃO"
+            android:imeOptions="actionNone"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/btn_save_usuario"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/save"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_return_usuario"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/backing"
+            android:layout_margin="5dp"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:gravity="">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="ID"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="SENHA"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="SITUAÇÃO"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_ColumnUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

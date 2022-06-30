@@ -1,4 +1,4 @@
-package br.com.portariaapp;
+package br.com.appportaria;
 
 import org.junit.Test;
 

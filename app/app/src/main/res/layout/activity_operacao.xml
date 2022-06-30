@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lbl_title_operacao"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPERAÇÕES"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <GridLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/txt_ColumnModelOperacao"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:hint="OPERAÇÃO"
+            android:imeOptions="actionNone"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/txt_DescOperacao"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:hint="OBSERVAÇÃO"
+            android:imeOptions="actionNone"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:layout_marginRight="10dp"/>
+
+
+
+        <Button
+            android:id="@+id/btn_save_operacao"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/save"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_return_opeacao"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/backing"
+            android:layout_margin="5dp"/>
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:gravity="">
+
+        <TextView
+            android:text="ID"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="OPERAÇÃO"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="OBSERVAÇÃO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_ColumnOperacao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+</LinearLayout>
